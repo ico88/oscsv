@@ -117,5 +117,5 @@ Naturalmente la seconda opzione può anche essere usata nel primo caso, per spec
 ### Change Log:
 
 v3.0.0 (05/01/2014)
-	- Sistemazione file lingua
-	- Import dello stato prodotto
+* Sistemazione file lingua
+* Import dello stato prodotto
