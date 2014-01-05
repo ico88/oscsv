@@ -1,9 +1,11 @@
-oscsv
-=====
+OSCSV
+=============================
 
-OSCV è un addon per OsCommerce che permette il caricamento degli articoli direttamente da file CSV.
+OSCSV è un addon per OsCommerce che permette il caricamento degli articoli direttamente da file CSV.
 
 L'Addon è basato sull'addon dell'Ing. Eugenio Bonifacicio, la versione originale è reperibile qui: http://www.eugeniobonifacio.com/content/easy-csv-import
+
+=============================
 
 INSTALLAZIONE:
 
@@ -26,8 +28,9 @@ se si vuole aggiungere una voce di menu in Amministrazione->Strumenti aggiungete
         'link' => tep_href_link('csv_import.php')
       )
 
-------------
-Uso:
+=============================
+
+USO:
 
 Il file CSV deve avere i seguenti campi nello stesso ordine:
 
@@ -57,7 +60,7 @@ la prima riga deve essere vuota o con i titoli, verrà ignorata in fase di impor
 
 si dovrà infine esportare/salvare il file in formato csv: separatore “;” (punto e virgola), delimitatore “"” (doppio apice)
 
------------------------------
+=============================
 
 PERSONALIZZAZIONE:
 
@@ -69,10 +72,9 @@ Per personalizzare i campi del file csv:
 
 *) Se non si vuole utilizzare la funzione "Svuota catalogo" basta impostare "allow_empty_db = 0" all'interno del file csv_import.ini
 
+=============================
 
------------------------------
-
-IMPORTAZIONE DELLE CATEGORIE
+IMPORTAZIONE DELLE CATEGORIE:
 
 A partire dalla versione 2.0.0 si possono importare le categorie a partire dal nome.
 
@@ -92,9 +94,9 @@ Hardware.Graphics Cards.AGP|Hardware.Graphics Cards.DVI
 
 Il prodotto importato sarà inserito in entrambe le categorie.
 
-------------------------------
+=============================
 
-IMPORTARE IMMAGINI REMOTE
+IMPORTARE IMMAGINI REMOTE:
 
 Si possono importare immagini remote mettendo nel campo "immagine" l'url dell'immagine da importare. Questa verrà scaricata all'interno della cartella delle immagini di oscommerce.
 
@@ -106,8 +108,9 @@ Ci sono due opzioni:
 
 Naturalmente la seconda opzione può anche essere usata nel primo caso, per specificare un nome diverso.
 
----------
-CHANGES LOG
+=============================
+
+CHANGES LOG:
 
 v3.0.0 (05/01/2014)
 	- Sistemazione file lingua
