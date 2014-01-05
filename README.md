@@ -1,6 +1,6 @@
 # OSCSV
 
-OSCSV è un addon per OsCommerce che permette il caricamento degli articoli direttamente da file CSV.
+OSCSV è un addon per OsCommerce che permette l'importazione degli articoli direttamente da file CSV.
 
 L'Addon è basato sull'addon dell'Ing. Eugenio Bonifacicio, la versione originale è reperibile qui:
 <a href="http://www.eugeniobonifacio.com/content/easy-csv-import"> OSCVS V2.0 </a>
