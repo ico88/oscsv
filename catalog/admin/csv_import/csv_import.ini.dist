@@ -1,0 +1,71 @@
+; ###################### GENERAL SETTINGS ###########################################
+[settings]
+debug = 0
+
+csv_upload_folder = "csv/"
+
+;if csv file has different columns count (relative to the first row, i.e. column headers), tries to correct it adding blank fields
+correct_fields_count = 1
+
+;max number of fields difference to correct (relative to the first row, i.e. column headers)
+correct_fields_radius = 5
+
+; default status of imported products
+products_default_status = 0
+
+;if no category has been supplied this is used
+default_category_id = 0
+
+; add categories if they not exist
+auto_add_categories = 1
+
+; images remote load
+import_images_urls = 1
+image_name_delimiter = "|"
+
+;allows to erase the product DB
+allow_empty_db = 1
+
+;decimal format, if one of them is empty tries to autodetect using browser system language
+decimal_point = ""
+thousands_sep = ""
+
+; ###################### CSV SETTINGS ###########################################
+[csv]
+; fields separator if you leave blank {TAB} is used
+delimiter = ";"
+
+; if empty uses double quotes, so leave blank if you want this.
+enclosure = "" 
+
+; Important for calculating the columns number
+columns_headers = "category|model|name_en|name_es|name_it|name_de|name_nl|name_fr|quantity|image|price|weight|description_en|description_es|description_it|description_de|description_nl|description_fr|tax class|manufacturer name"
+
+columns_headers_delimiter = "|"
+
+;separator character for the subcategories
+categories_delimiter = "|"
+categories_subcat_delimiter = "."
+categories_language = ""
+
+; ###################### DATA  BINDINGS ###########################################
+; fields names are bound to their corresponding csv colum number (starting from zero)
+
+[products]
+products_model = 1
+products_image = 9
+products_price = 10
+products_quantity = 8
+products_weight = 11
+products_tax_class_id = 18
+
+[categories]
+categories_id = 0
+
+[manufacturers]
+manufacturers_id = 19
+ 
+;to add or remove a single language just add or remove the language from below (and in cvs of course)
+[products_description]
+products_name = "en:2, es:3, it:4, de:5, nl:6, fr:7"
+products_description = "en:12, es:13, it:14, de:15, nl:16, fr:17"
