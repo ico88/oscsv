@@ -1,4 +1,5 @@
 <?php
+define('HEADING_TITLE', 'Importa CSV');
 define('CSV_USE_MODE','<b>Il file Excel/OOCalc deve essere strutturato come segue:</b>
 
 1. categoria (id o il nome, vedi in seguito)
@@ -21,11 +22,11 @@ define('CSV_USE_MODE','<b>Il file Excel/OOCalc deve essere strutturato come segu
 18. descrizione_fr
 19. classe tassa (id o nome)
 20. produttore ( id o nome)
-21. staus ( 1: attivo, 0: disattivo)
+21. status ( 1: attivo, 0: disattivo)
 
 la prima riga deve essere vuota o con i titoli, verrà ignorata.
 
-Bisogna esportare/salvare il file in CSVV con: separatore “;” (semicolon), delimitatore “"” (double quote)
+si dovrà infine esportare/salvare il file in formato csv: separatore “;” (punto e virgola), delimitatore “"” (doppio apice)
 ');
 define('CSV_FIELDS_MATCH_ERROR','Riga %s: Il numero dei campi non corrisponde');
 define('CSV_UNKNOWN_CATEGORY_ERROR','Riga %s: La categoria del prodotto non esiste');
