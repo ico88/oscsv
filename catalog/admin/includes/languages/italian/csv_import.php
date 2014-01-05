@@ -21,10 +21,11 @@ define('CSV_USE_MODE','<b>Il file Excel/OOCalc deve essere strutturato come segu
 18. descrizione_fr
 19. classe tassa (id o nome)
 20. produttore ( id o nome)
+21. staus ( 1: attivo, 0: disattivo)
 
 la prima riga deve essere vuota o con i titoli, verrà ignorata.
 
-you must export/save the file in csv format: separator “;” (semicolon), delimiter “"” (double quote)
+Bisogna esportare/salvare il file in CSVV con: separatore “;” (semicolon), delimitatore “"” (double quote)
 ');
 define('CSV_FIELDS_MATCH_ERROR','Riga %s: Il numero dei campi non corrisponde');
 define('CSV_UNKNOWN_CATEGORY_ERROR','Riga %s: La categoria del prodotto non esiste');
@@ -54,4 +55,5 @@ define('CSV_GO_BACK', 'Torna indietro');
 define('CSV_CONFIGURATION', 'Configurazione');
 define('CSV_INI_NOT_WRITABLE_ERROR', 'Il file di configurazione %s non è scrivibile');
 define('CSV_FOLDER_ERROR', 'La cartella %s non è valida o non si dispone dei permessi di lettura/scrittura su di essa');
+define('CSV_FILE_IMPORT', 'Importa CSV');
 ?>
