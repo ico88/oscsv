@@ -740,7 +740,7 @@ if(preg_match('/^config/', $action) && !is_writable(CSV_IMPORT_INI_FILE)) {
 		<hr/>
 		<a class="button" href="<?php echo CSV_IMPORT_PHP_FILE; ?>?action=config"><?php echo CSV_CONFIGURATION; ?></a>
 		<?php if((bool)$config['settings']['allow_empty_db']) { ?>
-		<a class="button" href="?action=empty" onclick="return confirm('<?php echo CSV_CONFIRM_EMPTY; ?>');" title="<?php echo CSV_EMPTY_CATALOG; ?>"><?php echo CSV_EMPTY_CATALOG; ?></a>
+		<a class="button" href="<?php echo CSV_IMPORT_PHP_FILE; ?>?action=empty" onclick="return confirm('<?php echo CSV_CONFIRM_EMPTY; ?>');" title="<?php echo CSV_EMPTY_CATALOG; ?>"><?php echo CSV_EMPTY_CATALOG; ?></a>
 		<br/>
 		<br/>
 		<?php } ?>
@@ -761,13 +761,13 @@ if($handle = @opendir(CSV_IMPORT_UPLOAD_FOLDER)) {
 	<tr>
 		<td class="file_column"><?php echo $file; ?></td>
 		<td>
-			<a class="button" href="?action=view&amp;file=<?php echo $file; ?>" title="<?php echo CSV_VIEW; ?>"><?php echo CSV_VIEW; ?></a>
+			<a class="button" href="<?php echo CSV_IMPORT_PHP_FILE; ?>?action=view&amp;file=<?php echo $file; ?>" title="<?php echo CSV_VIEW; ?>"><?php echo CSV_VIEW; ?></a>
 		</td>		
 		<td>
-			<a class="button" href="?action=import&amp;file=<?php echo $file; ?>" onclick="return confirm('<?php echo CSV_CONFIRM_IMPORT; ?>');" title="<?php echo CSV_IMPORT; ?>"><?php echo CSV_IMPORT; ?></a>
+			<a class="button" href="<?php echo CSV_IMPORT_PHP_FILE; ?>?action=import&amp;file=<?php echo $file; ?>" onclick="return confirm('<?php echo CSV_CONFIRM_IMPORT; ?>');" title="<?php echo CSV_IMPORT; ?>"><?php echo CSV_IMPORT; ?></a>
 		</td>
 		<td>
-			<a class="button" href="?action=delete&amp;file=<?php echo $file; ?>" onclick="return confirm('<?php echo CSV_CONFIRM_DELETE; ?>');" title="<?php echo CSV_DELETE; ?>"><?php echo CSV_DELETE; ?></a>
+			<a class="button" href="<?php echo CSV_IMPORT_PHP_FILE; ?>?action=delete&amp;file=<?php echo $file; ?>" onclick="return confirm('<?php echo CSV_CONFIRM_DELETE; ?>');" title="<?php echo CSV_DELETE; ?>"><?php echo CSV_DELETE; ?></a>
 		</td>
 	</tr>
 <?php			
